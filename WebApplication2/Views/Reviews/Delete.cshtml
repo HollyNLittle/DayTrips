@@ -11,6 +11,7 @@
     <div>
         <h3>Delete a Review</h3>
         <hr />
+        @*Displays and enables deletion of a review.*@
         <dl class="dl-horizontal">
             <dt>
                 @Html.DisplayNameFor(model => model.Category.Title)
@@ -57,10 +58,10 @@
         @using (Html.BeginForm())
         {
             @Html.AntiForgeryToken()
-
             <div class="form-actions no-color">
                 <input type="submit" value="Delete" class="btn btn-default" /> |
-                @Html.ActionLink("Back to List", "Index")
+                @*Menu to take user to reviews list*@
+                 @Html.ActionLink("Back to List", "Index")
             </div>
         }
     </div>

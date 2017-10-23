@@ -13,8 +13,8 @@
 
         <div class="form-horizontal">
             <h3>Add a review.</h3>
-
             <hr />
+            @*Displays enables creation of a category.*@
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
                 @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -64,7 +64,7 @@
         </div>
 
     }
-
+    @*Menu to take user to reviews list*@
     <div>
         @Html.ActionLink("Back to List", "Index")
     </div>

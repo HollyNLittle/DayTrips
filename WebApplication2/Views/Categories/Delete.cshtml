@@ -10,6 +10,7 @@
 <div>
     <hr />
     <dl class="dl-horizontal">
+        @*Enables deletion of a category.*@
         <dt>
             @Html.DisplayNameFor(model => model.Title)
         </dt>
@@ -30,7 +31,7 @@
 
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
-
+        @*Menu to take user to category list*@
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
             @Html.ActionLink("Back to List", "Index")

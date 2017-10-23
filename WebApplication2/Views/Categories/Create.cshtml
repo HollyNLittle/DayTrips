@@ -14,6 +14,7 @@
         <div class="form-horizontal">
             <h3>Create a new category.</h3>
             <hr />
+            @*Form to create a category.*@
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
                 @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -38,7 +39,7 @@
             </div>
         </div>
     }
-
+    @*Menu to take user to category list*@
     <div>
         @Html.ActionLink("Back to List", "Index")
     </div>

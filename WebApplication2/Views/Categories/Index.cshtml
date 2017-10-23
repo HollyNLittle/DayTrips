@@ -4,12 +4,13 @@
     ViewBag.Title = "Index";
 }
 <div class="page-body">
-
+    @*Header*@
     <h1>Categories</h1>
 
     <h3>
         @Html.ActionLink("Add Categories", "Create")
     </h3>
+    @*Displays the categories table.*@
     <table class="table">
         <tr>
             <th>
@@ -38,5 +39,24 @@
             </tr>
         }
 
-    </table> 
+    </table>
 </div>
+@*Second: three columns with three articles (image, paragraph and button)*@
+<div class="row">
+    <div class="col-md-4">
+        <div class="article">
+            <img src="~/Images/171KGI3VPL.jpg" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="article">
+            <img src="~/Images/RAI8L2JACH.jpg" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="article">
+            <img src="~/Images/jesse-orrico-169117.jpg" />
+        </div>
+    </div>
+</div>
+

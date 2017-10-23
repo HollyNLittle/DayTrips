@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-
+    @*Shared page contains HTML that needs to repeat on ALL pages.*@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,9 +32,10 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+        @*Displays the footer across all pages*@
         <footer>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 
-            <p>&copy; @DateTime.Now.Year - Day Trips</p>
+            <p>&copy; @DateTime.Now.Year -Great Day Trips</p>
             <p>Created by: Holly N. Little</p>
             <p>Not at all copyrighted.</p>
         </footer>

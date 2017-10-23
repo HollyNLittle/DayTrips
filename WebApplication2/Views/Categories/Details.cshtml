@@ -9,6 +9,7 @@
     <h3>Category Descriptions</h3>
     <hr />
     <dl class="dl-horizontal">
+        @*Displays a category.*@
         <dt>
             @Html.DisplayNameFor(model => model.Title)
         </dt>
@@ -24,9 +25,9 @@
         <dd>
             @Html.DisplayFor(model => model.Description)
         </dd>
-
     </dl>
 </div>
+@*Menu to take user to category list*@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.CategoryID }) |
     @Html.ActionLink("Back to List", "Index")
