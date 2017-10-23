@@ -1,0 +1,48 @@
+﻿@model WebApplication2.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@*<h1>The details...</h1>*@
+
+<div>
+    <h3>
+        @Html.DisplayFor(model => model.Title)
+    </h3>
+    <hr />
+    <p>
+        @Html.DisplayFor(model => model.Content)
+    </p>
+    <p>
+        @Html.DisplayFor(model => model.Author)
+    </p>
+    <p>
+        @Html.DisplayFor(model => model.Date)
+    </p>
+</div>
+<hr />
+<div class="row">
+    <h3>Need more info?</h3>
+    <div class="col-md-4">
+        <h4>Where to go find great grub.</h4>
+        <p>Whatever your tastes, Ohio has great local eateries and a food scene worthy of exploration.</p>
+        <img src="~/Images/brooke-lark-229136.jpg" />
+    </div>
+    <div class="col-md-4">
+        <h4>Where to sleep...</h4>
+        <p>Awesome accommodations to suit your needs, from cozy bed-and-breakfast inns with country 
+        breakfasts to lakeside cottages to spacious luxury rooms.</p>
+        <img src="~/Images/annie-spratt-383237.jpg" />
+    </div>
+    <div class="col-md-4">
+        <h4>Where to hang out.</h4>
+        <p>Find the right places for you.  Find great shopping, family fun, sporty adventures or romantic retreats.</p>
+        <img src="~/Images/coffeeMates.jpeg" />
+    </div>
+</div>
+@*<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star*@
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
